@@ -32,7 +32,7 @@ def check(path: str, latitude: float, longtitude: float, year1: int) -> bool:
         return "Incorrect lattitude"
     if longtitude < -180 or longtitude > 180:
         return "Incorrect longtitude"
-    if year1 <= 1850:
+    if year1 <= 1860:
         return "There is no films created this year"
     if year1 >= 2023:
         return "There is no films created this year"
@@ -140,3 +140,4 @@ def mapa(res: list, place: tuple):
     map.add_child(folium.LayerControl())
     map.save("FilmMap.html")
 
+main(year1, latitude, longtitude, path)
