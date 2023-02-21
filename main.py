@@ -140,14 +140,3 @@ def mapa(res: list, place: tuple):
     map.add_child(folium.LayerControl())
     map.save("FilmMap.html")
 
-
-print("start")
-start = time.time()
-# print(main(2016, 34.0536909, -118.242766 , "test.list"))
-main(year1, latitude, longtitude, path)
-end = time.time()
-print(f"time: {end-start}")
-
-
-
-# print(mapa([((34.0536909, -118.242766), ('Los Angeles', '"#Millennials"'), 0.0), ((35.5601553, -82.508691), ('Broadview Avenue', '"#KateConwayisaJerk"'), 3248.9513806493082), ((43.6534817, -79.3839347), ('Toronto', '"#KateConwayisaJerk"'), 3494.171543812041), ((43.6534817, -79.3839347), (' Toronto', '"#KateConwayisaJerk"'), 3494.171543812041), ((43.6534817, -79.3839347), (' Toronto', '"#KateConwayisaJerk"'), 3494.171543812041), ((43.648366800000005, -79.37439532076982), ('Gooderham Building', '"#KateConwayisaJerk"'), 3494.892997829848), ((40.7127281, -74.0060152), ('New York City', '"#DearGeorgette"'), 3935.6047270920208), ((40.6526006, -73.9497211), ('Brooklyn', '"#MommasGotBars"'), 3940.778449868295), ((40.8162099, -73.4323438), ('West Hills', '"#15SecondScare"'), 3983.054099688027), ((52.4081812, -1.510477), ('Coventry', '"#15SecondScare"'), 8618.152606791125)],(34.0536909, -118.242766)))
