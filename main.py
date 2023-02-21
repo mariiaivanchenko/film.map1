@@ -121,10 +121,10 @@ def mapa(res: list, place: tuple):
         iframe = folium.IFrame(html= html.format(val[1][0], val[1][1][1:-1]),width=200,height=100)
         second_layer.add_child(folium.Marker(location = [val[0][0], val[0][1]], popup = folium.Popup(iframe), icon=folium.Icon(color = "lightred",icon="fa-thin fa-star", prefix = "fa")))
 
-    def color_creator(population):
-        if population <= 1500:
+    def color_creator(distance):
+        if distance <= 1500:
             return "green"
-        elif 1500 <= population <= 5000:
+        elif 1500 <= distance <= 5000:
             return "yellow"
         else:
             return "red"
